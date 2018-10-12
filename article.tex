@@ -1,11 +1,35 @@
 \documentclass{article}
-
-\usepackage{amsmath}
-
 \author{Alex Hiller}
-\title{}
+\title{<++>}
+
+% Type-setting
 \setlength{\parindent}{0cm}
 \setlength{\parskip}{0.125cm}
+\pagenumbering{gobble}
+\usepackage[margin=3cm]{geometry} % Formatting
+
+% Packages
+\usepackage{amsmath}    % Mathematics
+\usepackage{amssymb}    % Mathematics
+\usepackage{listings}   % Listings
+\usepackage{color}      % Listings
+\usepackage{courier}    % Listings
+\usepackage{circuitikz} % Circuits
+\usepackage{titlesec}   % Section Formatting
+
+% Code Formatting 
+\input{/home/polluticorn/GitHub/texTemplates/codeFormat}
+
+% Math Macros
+\input{/home/polluticorn/GitHub/texTemplates/mathMacros}
+
+% Section formatting
+\titleformat{\section}{\huge \bfseries}{}{0em}{}[]
+\titleformat{\subsection}{\Large \bfseries}{}{0em}{}
+\titleformat{\subsubsection}{\bfseries}{}{0em}{}
+
+% Note Taking Macros
+\input{/home/polluticorn/GitHub/texTemplates/noteTaking}
 
 \begin{document}
 
