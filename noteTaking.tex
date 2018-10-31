@@ -2,5 +2,6 @@
 
 %%%%%% QUESTION AND ANSWER
 \newcounter{question}
-% \AtEndDocument{\clearpage \textbf{Questions:} \newline \newline}
+%\AtEndDocument{\textbf{Questions:} \vspace{3mm} \newline}
 \newcommand{\qanda}[2]{\AtEndDocument{\stepcounter{question}Q\arabic{question}. \textit{#1} \vspace{2mm}\newline \AtEndDocument{A\arabic{question}. #2 \newline \newline}}}
+\newcommand{\code}[1]{\begin{lstlisting} #1 \end{lstlisting}}

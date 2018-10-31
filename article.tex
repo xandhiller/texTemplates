@@ -1,7 +1,6 @@
 \documentclass{article}
 \author{Alex Hiller}
 \title{<++>}
-
 % Type-setting
 \setlength{\parindent}{0cm}
 \setlength{\parskip}{0.125cm}
@@ -9,13 +8,16 @@
 \usepackage[margin=3cm]{geometry} % Formatting
 
 % Packages
-\usepackage{amsmath}    % Mathematics
-\usepackage{amssymb}    % Mathematics
-\usepackage{listings}   % Listings
-\usepackage{color}      % Listings
-\usepackage{courier}    % Listings
-\usepackage{circuitikz} % Circuits
-\usepackage{titlesec}   % Section Formatting
+\usepackage[backend=biber]{biblatex}  % Referencing
+\addbibresource{/home/polluticorn/GitHub/configuration/list.bib}
+\usepackage{amsmath}                  % Mathematics
+\usepackage{amssymb}                  % Mathematics
+\usepackage{listings}                 % Listings
+\usepackage{esint}
+\usepackage{color}                    % Listings
+\usepackage{courier}                  % Listings
+\usepackage{circuitikz}               % Circuits
+\usepackage{titlesec}                 % Section Formatting
 
 % Code Formatting 
 \input{/home/polluticorn/GitHub/texTemplates/codeFormat}
@@ -32,6 +34,7 @@
 \input{/home/polluticorn/GitHub/texTemplates/noteTaking}
 
 \begin{document}
+% \AtEndDocument{\printbibliography}
 
 <++>
 

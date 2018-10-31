@@ -1,0 +1,93 @@
+\documentclass{article}
+\author{Alex Hiller}
+\title{Concepts, Techniques, Exercises and Problems <++>}
+% Type-setting
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{0.125cm}
+\usepackage[margin=3cm]{geometry} % Formatting
+
+% Packages
+\usepackage{amsmath}                  % Mathematics
+\usepackage{amssymb}                  % Mathematics
+\usepackage{listings}                 % Listings
+\usepackage{esint}
+\usepackage{color}                    % Listings
+\usepackage{courier}                  % Listings
+\usepackage{circuitikz}               % Circuits
+\usepackage{titlesec}                 % Section Formatting
+
+% Code Formatting 
+\input{/home/polluticorn/GitHub/texTemplates/codeFormat}
+
+% Math Macros
+\input{/home/polluticorn/GitHub/texTemplates/mathMacros}
+
+% Section formatting
+\titleformat{\section}{\huge \bfseries}{}{0em}{}[]
+\titleformat{\subsection}{\Large \bfseries}{}{0em}{}
+\titleformat{\subsubsection}{\bfseries}{}{0em}{}
+
+% Note Taking Macros
+\input{/home/polluticorn/GitHub/texTemplates/noteTaking}
+
+% Formatting Problems and Answers.
+
+% Counters
+\newcounter{problems}
+\newcounter{solutions}
+\newcounter{concepts}
+\newcounter{techniques}
+\newcounter{exercises}
+
+% Document Components
+\newcommand{\Problem}{\stepcounter{problems}\subsection{Problem \arabic{problems}}}
+\newcommand{\pSolution}{\stepcounter{solutions}\subsection{Solution to Problem \arabic{problems}}}
+\newcommand{\eSolution}{\stepcounter{solutions}\subsection{Solution to Exercise \arabic{exercises}}}
+\newcommand{\Exercise}{\stepcounter{exercises}\subsection{Exercise \arabic{exercises}}}
+\newcommand{\Technique}{\stepcounter{techniques}\subsection{Technique \arabic{techniques}}}
+\newcommand{\Concept}{\stepcounter{concepts}\subsection{Concept \arabic{concepts}}}
+\newcommand{\Answer}[1]{\subsubsection{Answer} \parbox{\textwidth}{\fbox{#1}}}
+
+% Shorten table commands
+\newcommand{\btab}[1]{\begin{table}[!h] \begin{center} \begin{tabular}{#1}}
+\newcommand{\etab}{ \end{tabular} \end{center} \end{table}}
+
+% Shorten section commands
+\newcommand{\s}[1]{\section{#1}}
+\renewcommand{\ss}[1]{\subsection{#1}}
+\newcommand{\sss}[1]{\subsubsection{#1}}
+
+\begin{document}
+
+\maketitle
+\clearpage
+\tableofcontents
+\clearpage
+
+\s{How to Use this Document}
+There are some important distinctions in nomenclature that will help you navigate these notes.
+
+\btab{|c|c|} \hline
+  Concept   & <++> \\ \hline 
+  Technique & <++> \\ \hline 
+  Exercise  & <++> \\ \hline 
+  Problem   & <++> \\ \hline
+  Answer    & <++> \\ \hline
+  Solution  & <++> \\ \hline
+\etab
+
+\clearpage
+
+\s{Problems}
+\Problem 
+A 100 kVA, 11000:2200 V, 60 Hz, single-phase transformer has the following equivalent circuit parameters referred to the high-potential side:
+
+The transformer is supplying at 2.20 kV a load circuit of 50 $\Omega$  impedance and a leading power
+factor of 0.7. Draw a phasor diagram (not to scale) showing the various phasor magnitudes
+and angles for this operating condition. Determine the potential difference and power factor
+at the high-potential terminals of the transformer. 
+
+
+\pSolution 
+
+\end{document}
