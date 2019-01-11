@@ -1,34 +1,25 @@
-\documentclass{article}
-\author{Alex Hiller}
-\title{<++>}
-
-% Type-setting
-\setlength{\parindent}{0cm}
-\setlength{\parskip}{0.125cm}
-\pagenumbering{gobble}
-\usepackage[margin=3cm]{geometry} % Formatting
-
-% Packages
-\usepackage{amsmath}    % Mathematics
-\usepackage{amssymb}    % Mathematics
-\usepackage{listings}   % Listings
-\usepackage{color}      % Listings
-\usepackage{courier}    % Listings
-\usepackage{circuitikz} % Circuits
-
-% Custom Commands
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Math Macros
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Standard Notation for Vectors in Computer Vision
 \newcommand{\vc}[2]{\mathbf{#1}_{#2}}
-% Questions and Answers
-\AtEndDocument{\clearpage \textbf{Questions:} \newline \newline}
+% Laplace Transform
+\newcommand{\Lapl}[1]{\mathcal{L}  \bigg\{ #1  \bigg\}  } 
+% Inverse Laplace Transform
+\newcommand{\iLapl}[1]{\mathcal{L}^{-1}  \bigg\{ #1  \bigg\}  } 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Note-taking macros
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcounter{question}
 \newcommand{\qanda}[2]{\AtEndDocument{\stepcounter{question}Q\arabic{question}. \textit{#1} \vspace{2mm}\newline \AtEndDocument{A\arabic{question}. #2 \newline \newline}}}
+\newcommand{\code}[1]{\begin{lstlisting} #1 \end{lstlisting}}
 
-% Section formatting
-\usepackage{titlesec}
-\titleformat{\section}{\huge \bfseries}{}{0em}[\clearpage]
-\titleformat{\subsection}{\Large \bfseries}{}{0em}{}[]
-\titleformat{\subsubsection}{\bfseries}{}{0em}{}[]
 
-% Listing Pre-Requisites
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  % Listings Prerequisites
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
@@ -52,9 +43,3 @@
   tabsize=2
 }
 \lstset{style=mystyle} 
-
-
-\begin{document}
-
-<++>
-\end{document}
