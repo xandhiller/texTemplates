@@ -5,7 +5,7 @@
 \setlength{\parindent}{0cm}
 \setlength{\parskip}{0.125cm}
 \pagenumbering{gobble}
-\usepackage[margin=1cm]{geometry} % Formatting
+\usepackage[margin=2.5cm]{geometry} % Formatting
 \usepackage{amsmath}      % Mathematics
 \usepackage{amssymb}      % Mathematics
 \usepackage{listings}     % Listings
@@ -15,6 +15,8 @@
 \usepackage{circuitikz}   % Circuits
 \usepackage{titlesec}     % Section Formatting
 \usepackage{stmaryrd}               % \mapsfrom arrow. 
+\usepackage{svg}
+\setsvg{inkscape=inkscape -z -D}
 \input{/home/polluticorn/GitHub/texTemplates/texMacros}
 % Section formatting
 \titleformat{\section}{\huge \bfseries}{}{0em}{}[]
@@ -25,11 +27,8 @@
 
 \begin{document}
 
+\maketitle
 
-\begin{equation}
-  \frac{x}{y}
-\end{equation}
-
-<++>
 
 \end{document}
+
